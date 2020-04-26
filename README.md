@@ -61,3 +61,15 @@ Payment Modal, you have to pass through various steps, just to view and check th
 ### Grouping stories
 
 - storiesOf("***Component | Banners/Major***", module)
+
+### Theming storybook
+
+- storybook-getting-started/.storybook/crfTheme.js
+- storybook-getting-started/.storybook/config.js
+- hierarchyRootSeparator
+    - storiesOf("Component ***|*** Banners/Major", module)
+- hierarchySeparator
+    - storiesOf("Component | Banners ***/*** Major", module)
+- panelPosition
+    - can be at the bottom or right side
+- isToolShown, isFullScreen, showNav (boolean values)
