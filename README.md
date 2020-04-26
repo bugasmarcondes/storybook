@@ -38,6 +38,8 @@ Payment Modal, you have to pass through various steps, just to view and check th
 
 ## Creating stories
 
+### Writing the first story
+
 - git checkout m3-installing-storybook
 - storybook/storybook-getting-started/components/form/cta-button.js
 - storybook/storybook-getting-started/stories/button.stories.js
@@ -48,3 +50,10 @@ Payment Modal, you have to pass through various steps, just to view and check th
     - Group title
     - Story title
     - Story body
+
+### Using assets
+
+- storybook/storybook-getting-started/stories/banner.stories.js
+- storybook/storybook-getting-started/package.json
+    - "storybook": "start-storybook -p 6006 -s ./Images",
+- restart storybook script
