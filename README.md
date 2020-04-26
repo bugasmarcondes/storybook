@@ -79,3 +79,22 @@ Payment Modal, you have to pass through various steps, just to view and check th
 - If the story doesn't show up, check the filename, which must be in its correct form (xxx.stories.js)
 - If components are not styled, remember to check if CSS is imported in component or in /.storybook/config.js
 - Assets missing, check storybook script in package.json
+
+## Using add-ons
+
+- Navigation pane (at the left, list of stories)
+- *Story preview (at the top, + / - / refresh)
+- *Panels (at the bottom)
+
+\*Where add-ons are used most
+
+### With info
+
+- Shows how to use the components
+- Started having problems when trying to execute storybook, and solved...
+    1. deleted /node_modules
+    2. npx -p @storybook/cli sb init
+    3. npm install
+    4. npm run storybook
+- storybook-getting-started/stories/button.stories.js
+- storybook-getting-started/.storybook/config.js
