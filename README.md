@@ -57,3 +57,7 @@ Payment Modal, you have to pass through various steps, just to view and check th
 - storybook/storybook-getting-started/package.json
     - "storybook": "start-storybook -p 6006 -s ./Images",
 - restart storybook script
+
+### Grouping stories
+
+- storiesOf("***Component | Banners/Major***", module)
