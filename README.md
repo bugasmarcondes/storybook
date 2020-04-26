@@ -88,6 +88,9 @@ Payment Modal, you have to pass through various steps, just to view and check th
 
 \*Where add-ons are used most
 
+- Decorators, are wrapper components
+- Always check if the installed add-on is registered in /.storybook/addons.js
+
 ### With info
 
 - Shows how to use the components
@@ -107,3 +110,12 @@ Payment Modal, you have to pass through various steps, just to view and check th
     3. storybook-getting-started/.storybook/addons.js
 - Knobs could be Boolean, Number, Object, Select, Date, Files
     - https://github.com/storybooks/storybook/tree/master/addons/knobs
+
+### Override configs
+
+- storybook-getting-started/stories/banner.stories.js
+    - We can set configurations Globally, Group level or Story level
+- We can also set Info Options like Header and Source, Prop Tables, Styles, Max Props
+    - https://github.com/storybooks/storybook/tree/master/addons/info
+- Complete list of addons
+    - https://storybook.js.org/addons

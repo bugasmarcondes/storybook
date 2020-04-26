@@ -5,6 +5,21 @@ import MinorBanner from "../components/minor.banner";
 import { text } from "@storybook/addon-knobs";
 
 storiesOf("Component | Banners/Major", module)
+  .addParameters({
+    info: {
+      // overriding default for the story group
+      // inline: false,
+      text: `
+      ### Lorem ipsum dolor
+      Sit amet consectetur adipisicing elit.
+      ___
+      **Quis:** dolorem repellendus adipisci recusandae.
+      
+      **Odio tempore:** 1
+      
+      **Esse ex:** aperiam quas in totam tempora architecto quod sed iure aut praesentium.`,
+    },
+  })
   .add("With only title", () => {
     // Title = label
     // Banner title = default value
@@ -31,17 +46,25 @@ storiesOf("Component | Banners/Major", module)
   });
 
 storiesOf("Component | Banners/Minor", module)
-  .add("No pictures", () => {
-    const title = text("Title", "Banner title");
+  .add(
+    "No pictures",
+    () => {
+      const title = text("Title", "Banner title");
 
-    return (
-      <MinorBanner
-        title={title}
-        subtitle="Banner subtitle"
-        body="Banner body"
-      />
-    );
-  })
+      return (
+        <MinorBanner
+          title={title}
+          subtitle="Banner subtitle"
+          body="Banner body"
+        />
+      );
+    },
+    {
+      info: {
+        inline: false,
+      },
+    }
+  )
   .add("With all text options", () => {
     const title = text("Title", "Banner title");
 
