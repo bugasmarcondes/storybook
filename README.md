@@ -73,3 +73,9 @@ Payment Modal, you have to pass through various steps, just to view and check th
 - panelPosition
     - can be at the bottom or right side
 - isToolShown, isFullScreen, showNav (boolean values)
+
+### Common issues and reminders
+
+- If the story doesn't show up, check the filename, which must be in its correct form (xxx.stories.js)
+- If components are not styled, remember to check if CSS is imported in component or in /.storybook/config.js
+- Assets missing, check storybook script in package.json
