@@ -98,3 +98,12 @@ Payment Modal, you have to pass through various steps, just to view and check th
     4. npm run storybook
 - storybook-getting-started/stories/button.stories.js
 - storybook-getting-started/.storybook/config.js
+
+### Knobs
+
+- Allow us to dynamically change the data, and see how that data would perform on the component
+    1. storybook-getting-started/.storybook/config.js
+    2. storybook-getting-started/stories/banner.stories.js
+    3. storybook-getting-started/.storybook/addons.js
+- Knobs could be Boolean, Number, Object, Select, Date, Files
+    - https://github.com/storybooks/storybook/tree/master/addons/knobs
