@@ -17,6 +17,8 @@ Payment Modal, you have to pass through various steps, just to view and check th
     - Easy to expirement with different staers
     - Easy to implement in the app
 
+<hr>
+
 ## Installing
 
 ### storybook-bugas (from the scratch)
@@ -35,6 +37,8 @@ Payment Modal, you have to pass through various steps, just to view and check th
 
 - Clone the repository https://github.com/taylonr/storybook-getting-started.git
 - npx -p @storybook/cli sb init
+
+<hr>
 
 ## Creating stories
 
@@ -80,6 +84,8 @@ Payment Modal, you have to pass through various steps, just to view and check th
 - If components are not styled, remember to check if CSS is imported in component or in /.storybook/config.js
 - Assets missing, check storybook script in package.json
 
+<hr>
+
 ## Using add-ons
 
 - Navigation pane (at the left, list of stories)
@@ -119,3 +125,28 @@ Payment Modal, you have to pass through various steps, just to view and check th
     - https://github.com/storybooks/storybook/tree/master/addons/info
 - Complete list of addons
     - https://storybook.js.org/addons
+
+<hr>
+
+## Creating an Add-on
+
+### Creating an add-on
+### Creating the panel
+### Receiving data
+
+- Select story, Event fired, Panel added, Event fired
+- Displaying data inside the panel
+
+- storybook/storybook-tutorial/seeAlso/register.js
+- storybook/storybook-tutorial/.storybook/addons.js
+- storybook/storybook-tutorial/seeAlso/index.js
+- storybook/storybook-tutorial/stories/banner.stories.js
+
+### Storybook API
+
+- getChannel, provides a channel so that you can communicate between the story and the Storybook manager. This is how we fired our story selected event.
+- register, provides storybook api to your addon.
+- addPanel, create a new panel.
+- selectStory, selectInCurrentKind (select story)
+- setQueryParams, getQueryParams (url)
+- onStory(), (when user navigates between stories)
