@@ -150,3 +150,16 @@ Payment Modal, you have to pass through various steps, just to view and check th
 - selectStory, selectInCurrentKind (select story)
 - setQueryParams, getQueryParams (url)
 - onStory(), (when user navigates between stories)
+
+<hr>
+
+## Deploying Storybook and Next Steps
+
+- storybook/storybook-tutorial/package.json
+- add "-s ./Images"
+- run script "build-storybook"
+- storybook will generate a path for the output
+- static hosting options (locally or via netlify, aws)
+
+- https://storybook.js.org/docs/basics/introduction/ (click in edit this page)
+- https://storybook.js.org/community/
